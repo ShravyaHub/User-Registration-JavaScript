@@ -1,7 +1,7 @@
 const NAME_REGEX = /^[A-Z][a-z]{2,}$/;
 const EMAIL_REGEX = /^([a-z0-9]+[-._+]?[a-z0-9]+)+@[a-z0-9-]+.[a-z]{2,3}.[a-z]{2,3}$/;
 const PHONE_NUMBER_REGEX = /^[9][1][ ][6-9][0-9]{9}$/;
-const PASSWORD_REGEX = /^(?=.*[A-Z]).{8,}$/;
+const PASSWORD_REGEX = /^(?=.*[0-9])(?=.*[A-Z]).{8,}$/;
 
 var readlineSync = require('readline-sync');
 var utility = require('./utility');
